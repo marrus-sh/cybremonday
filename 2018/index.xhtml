@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>[CMON2018] The CYBRE Manifesto | CYBREMONDAY</title>
+	<meta name="author" content="CYBREMONDAY staff" />
+	<meta name="description" content="2017 was the year of the cyber. Now, 2018 is the year of the cybre. (Deluxe edition)" />
+	<meta name="referrer" content="strict-origin-when-cross-origin" />
+	<meta name="audience" content="all" />
+	<meta name="publisher" content="CYBREMONDAY staff" />
+	<meta property="og:title" content="The CYBRE Manifesto" />
+	<meta property="og:description" content="2017 was the year of the cyber. Now, 2018 is the year of the cybre. (Deluxe edition)" />
+	<meta property="og:locale" content="en" />
+	<meta property="og:url" content="https://www.cybremonday.deals/2018/" />
+	<meta property="og:image" content="https://www.cybremonday.deals/2018/cover.png" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:type" content="article" />
+	<meta property="article:published_time" content="2018-11-26T18:30:00-08:00" />
+	<link rel="canonical" href="https://www.cybremonday.deals/2018/" />
+	<link rel="icon" href="https://www.cybremonday.deals/icon.png" />
+	<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+	<style>
+		p>* { Text-Indent: 0 }
+
+		#letterhead {
+			Display: Block;
+			Position: Fixed;
+			Box-Sizing: Content-Box;
+			Top: 0;
+			Left: 0;
+			Right: 0;
+			Margin: 0;
+			Border: None;
+			Padding: 1.5EX 2.25CH;
+			Height: 4EX;
+			Color: #FFF;
+			Background: #90F;
+			Font: Normal Large/1 Serif;
+			Text-Align: Center;
+			Z-Index: 900;
+		}
+		#content {
+			Display: Block;
+			Margin: Auto;
+			Padding: 0 8CH;
+			Max-Width: 64CH;
+			Color: #000;
+			Background: #FFF;
+			Box-Shadow: 0 0 7CH 0 CurrentColor;
+			Font: Normal Large/1.5 Serif;
+			Text-Align: Justify;
+		}
+		#frontpage {
+			Display: Block;
+			Position: Relative;
+			Margin: 0 -8CH;
+			Font: Normal Large/1 Serif;
+		}
+		#journaltitle {
+			Display: Inline;
+			Margin: 0;
+			Border: None;
+			Padding: 0;
+			Font-Size: 4EX;
+			Line-Height: 1;
+		}
+		#issueno {
+			Position: Absolute;
+			Top: 1.5EX;
+			Left: 2CH;
+			Right: 2CH;
+			Margin: 0;
+			Font: Normal X-Large/1 Serif;
+			Text-Align: Center;
+		}
+		#issuetitle {
+			Position: Absolute;
+			Top: 0;
+			Bottom: 0;
+			Left: 0;
+			Right: 0;
+			Margin: Auto;
+			Padding: 0 .5CH;
+			Height: 3EM;
+			Font: Normal 5EX/1.5 Sans-Serif;
+			Text-Align: Center;
+			Text-Transform: Uppercase;
+		}
+		#edition {
+			Position: Absolute;
+			Bottom: 5EX;
+			Left: 2CH;
+			Right: 2CH;
+			Margin: 0;
+			Font: Normal X-Large/1 Serif;
+			Text-Align: Right;
+		}
+		#cover {
+			Display: Block;
+			Box-Sizing: Border-Box;
+			Width: 100%;
+			Height: Auto;
+		}
+		#playlist {
+			Display: Block;
+			Margin: 0 -8CH;
+			Border: None;
+			Padding: 0;
+		}
+		#warnings {
+			Border-Color: #90F Transparent #000;
+		 	Background: #C6F;
+			Text-Align: Center;
+		}
+		#foreward {
+			Display: Block;
+			Box-Sizing: Border-Box;
+			Margin: 2EX 1CH;
+			Border-Style: Solid Double;
+			Border-Color: Transparent #90F;
+			Border-Width: 1EX .5CH;
+			Padding: 1EX 2.5CH;
+		}
+		#backpage {
+			Display: Block;
+			Box-Sizing: Content-Box;
+			Margin: 0 Calc(32CH - 50VW);
+			Border: None;
+			Padding: .5EX 1CH;
+			Color: #FFF;
+			Background: #90F;
+			Font: Normal Large/1 Serif;
+			Text-Align: Center;
+			Z-Index: 800;
+		}
+
+		aside, nav {
+			Display: Block;
+			Margin: 0 -8CH;
+			Padding: 0 8CH;
+			Border-Style: Solid None;
+			Border-Color: #90F Transparent;
+			Border-Width: Thin 0;
+			Background: RGBA(153, 0, 255, .1);
+			Color: #90F;
+			Font: Normal Large/1.5 Serif;
+		}
+		aside {
+			Padding: 1EX 5CH;
+			Color: #000;
+		}
+		body {
+			Margin: 0;
+			Padding: 7EX 4CH 0;
+			Color: #FFF;
+			Background: Url("./background.png") Fixed Center / Cover No-Repeat, #90F ;
+			Font: Normal Large/1.5 Serif;
+		}
+		html {
+			Margin: 0;
+			Padding: 0;
+			Color: #FFF;
+			Background: #90F;
+			Font: Normal Large/1.5 Serif;
+		}
+		blockquote>footer:Last-Child, section>footer:Last-Child {
+			Display: Block;
+			Position: Relative;
+			Box-Sizing: Border-Box;
+			Margin: 0;
+			Padding: 0 0 0 5CH;
+			Font: Normal Large/1.5 Serif;
+		}
+		blockquote>footer:Last-Child { Font: Normal Medium/1.25 Serif }
+		blockquote>footer:Last-Child::BEFORE, section>footer:Last-Child::BEFORE {
+			Display: Block;
+			Position: Absolute;
+			Top: 0;
+			Left: 0;
+			Padding: 0 1.5CH 0 0;
+			Width: 3.5CH;
+			Color: #90F;
+			Text-Align: Right;
+			Content: "—";
+		}
+		section>footer:Last-Child {
+			Margin: 0 0 0 Auto;
+			Width: -webkit-Fit-Content;
+			Width: -moz-Fit-Content;
+			Width: Fit-Content;
+		}
+
+		table.SPLIT {
+			Margin: 1.5EX Auto;
+			Box-Sizing: Border-Box;
+			Border-Style: Dotted Solid Solid Dotted;
+			Border-Color: #90F;
+			Border-Width: Thin Medium Medium Thin;
+			Border-Collapse: Collapse;
+			Width: 100%;
+			Max-Width: Calc(100% - 4CH);
+		}
+		table.SPLIT td { Padding: .75EX 2CH }
+		table.SPLIT td+td { Border-Left: Thin #90F Dashed }
+		div.GROUPED table.SPLIT { Margin: 0 Auto }
+
+		nav ol {
+			Margin: 1EX 0;
+			Padding: 0;
+			List-Style-Type: Decimal-Leading-Zero;
+		}
+		ul {
+			Margin: 1.5EX 0;
+			Padding: 0 0 0 4CH;
+			List-Style-Type: "⁃ ";
+		}
+		div.GROUPED ul { Margin: 0 }
+
+		blockquote {
+			Box-Sizing: Border-Box;
+			Margin: 1.5EX 4CH;
+			Border-Style: Double Solid;
+			Border-Color: #90F Transparent;
+			Border-Width: .5EX 1CH;
+			Padding: 2EX 3CH;
+			Min-Width: Calc(50% + 4CH);
+		}
+		div.GROUPED { Margin: 1.5EX 0 }
+		figure {
+			Display: Block;
+			Margin: 1.5EX -4CH;
+			Overflow: Auto;
+		}
+		h3 {
+			Position: Relative;
+			Box-Sizing: Content-Box;
+			Margin: 3EX -2CH 1.5EX -4CH;
+			Border: None;
+			Border-Radius: 4EX 0 0 4EX;
+			Padding: 2.5EX 2CH 2.5EX 9EX;
+			Min-Height: 3EX;
+			Color: #FFF;
+			Background: Radial-Gradient(Ellipse Farthest-Corner At -13% -13%, #000 69%, #90F 84%), #000;
+			Font: Small-Caps Large / 1 Sans-Serif;
+			Text-Align: Left;
+		}
+		h3::AFTER {
+			Display: Block;
+			Position: Absolute;
+			Top: 100%;
+			Right: 0;
+			Width: 1PX;
+			Height: 30EX;
+			Color: #90F;
+			Background: Linear-Gradient(To Bottom, CurrentColor, Transparent);
+			Content: "";
+		}
+		#introduction h3 {
+			Box-Sizing: Border-Box;
+			Margin: 1.5EX Auto;
+			Border-Style: Double Solid;
+			Border-Color: CurrentColor Transparent;
+			Border-Width: .5EX 1CH;
+			Border-Radius: 0;
+			Padding: 2EX 3CH;
+			Min-Height: 0;
+			Color: #90F;
+			Background: Transparent;
+			Font: Normal Large/1.5 Serif;
+			Letter-Spacing: .25CH;
+			Text-Align: Center;
+			Text-Transform: Uppercase;
+		}
+		#introduction h3::AFTER { Content: None }
+		aside h3 {
+			Margin: 0 -5CH 2.5EX;
+			Border-Radius: 0;
+			Border-Style: Double None;
+			Border-Width: .25CH 0;
+			Padding: 1EX 5CH;
+			Min-Height: 0;
+			Color: #FFF;
+			Background: #90F;
+			Font: Bold Large/1.5 Serif;
+			Text-Align: Center;
+		}
+		aside h3::AFTER {
+			Display: Inline;
+			Width: Auto;
+			Height: Auto;
+			Color: Inherit;
+			Background: Transparent;
+			Content: " :";
+		}
+		nav h3 {
+			Margin: 2EX 0 1EX;
+			Border-Radius: 0;
+			Padding: 0;
+			Min-Height: 0;
+			Color: Inherit;
+			Background: Transparent;
+			Font: Bold X-Large/1.5 Serif;
+		}
+		nav h3::AFTER { Content: None }
+		p {
+			Position: Relative;
+			Margin: 1.5EX 0;
+		}
+		div.GROUPED+p, p+p { Text-Indent: 4CH }
+		div.GROUPED+p::BEFORE, p+p::BEFORE {
+			Display: Block;
+			Position: Absolute;
+			Top: 0;
+			Left: 0;
+			Padding: 0 1.5CH 0 0;
+			Width: 2.5CH;
+			Color: #90F;
+			Font-Style: Italic;
+			Text-Align: Right;
+			Text-Indent: 0;
+			Content: "¶";
+		}
+		blockquote p { Margin: 0 Auto 1.5EX }
+		blockquote p::AFTER { Content: No-Close-Quote }
+		blockquote p::BEFORE { Content: No-Open-Quote }
+		blockquote p+p::BEFORE { Content: "¶" No-Open-Quote }
+		blockquote p:Only-Of-Type {
+			Width: -webkit-Fit-Content;
+			Width: -moz-Fit-Content;
+			Width: Fit-Content;
+		}
+		blockquote p:First-Of-Type::BEFORE, blockquote p:Last-Of-Type::AFTER {
+			Display: Block;
+			Position: Absolute;
+			Width: 1.5CH;
+			Color: #C9F;
+			Font: Bold Italic 2EM/1 Serif;
+			Text-Indent: 0;
+		}
+		blockquote p:First-Of-Type::BEFORE {
+			Top: 0;
+			Left: -2CH;
+			Text-Align: Right;
+			Content: Open-Quote;
+		}
+		blockquote p:Last-Of-Type::AFTER {
+			Bottom: -1EX;
+			Right: -2CH;
+			Text-Align: Left;
+			Content: Close-Quote;
+		}
+		#backpage p {
+			Margin: 1.75EX Auto;
+			Max-Width: 64CH;
+			Font: Normal Small/1.25 Serif;
+			Text-Align: Center;
+			Text-Indent: 0;
+		}
+		#backpage p+p::BEFORE{ Content: None }
+		aside p {
+			Display: Inline;
+			Margin: 0;
+			Font: Normal Medium/1.875 Serif;
+			Text-Indent: 0;
+		}
+		aside p+p::BEFORE {
+			Display: Inline-Block;
+			Position: Static;
+			Padding: 0 1.5CH 0 0;
+			Width: 2.5CH;
+			Color: #90F;
+			Font-Style: Italic;
+			Text-Align: Right;
+		}
+		div.GROUPED p { Margin: 0 }
+		nav li {
+			Padding: .5EX 0;
+			Color: #000;
+			List-Style-Position: Inside;
+		}
+		nav li + li { Border-Top: Thin #90F Solid }
+
+		a[href] {
+			Color: Inherit;
+			Text-Decoration: Dashed Underline;
+		}
+		a[href][rel~=external] { Text-Decoration: Wavy Underline }
+		a[href]:Hover {
+			Color: #90F;
+			Text-Decoration: Dashed Underline;
+		}
+		#letterhead a[href] {
+			Color: Inherit;
+			Text-Decoration: None;
+		}
+		#backpage a[href] { Color: Inherit }
+		h3>a[href] {
+			Display: Block;
+			Position: Absolute;
+			Top: 1EX;
+			Bottom: 1EX;
+			Left: 1EX;
+			Margin: Auto;
+			Border-Radius: 3EX;
+			Padding: 0 0 0 6EX;
+			Width: 0;
+			Height: 6EX;
+			Color: Transparent;
+			Background: Url("./siri.png") Center / Contain, #90F;
+			Background-Blend-Mode: Luminosity;
+			Box-Shadow: 0 0 .75EX .75EX Inset #000;
+			Overflow: Hidden;
+			Transition: Box-Shadow Ease-In-Out .15S;
+		}
+		h3>a[href]:Hover { Box-Shadow: 0 0 .5EX .5EX Inset #000 }
+		#introduction h3>a[href] { Display: None }
+		nav a[href] { Text-Decoration: None }
+		abbr[title] { }
+		b { Font-Weight: Inherit }
+		#frontpage b {
+			Color: #90F;
+			Background: #FFF;
+			Margin: -.25EX -.25CH;
+			Border: Thin Solid;
+			Padding: .25EX .25CH;
+			Font-Style: Italic;
+			Text-Transform: Uppercase;
+		}
+		#issuetitle b {
+			Border-Style: Solid Double Double Solid;
+			Border-Width: .25EX .25CH;
+			Font-Style: Normal;
+			Font-Weight: Bold;
+		}
+		b.HIGHLIGHT {
+			Background: RGBA(153, 0, 255, .1);
+			Margin: -.25EX -.25CH;
+			Border: Thin #90F Solid;
+			Padding: .25EX .25CH;
+		}
+		b.LOGOTYPE {
+			Margin: -.5EX -.25CH;
+			Border-Style: Double;
+			Border-Width: .25EX .25CH;
+			Padding: .25EX .5CH;
+			Color: #FFF;
+			Background: #90F;
+			Font-Family: Sans-Serif;
+			Font-Style: Italic;
+			Letter-Spacing: .25CH;
+		}
+		#letterhead b.LOGOTYPE, #backpage b.LOGOTYPE {
+			Color: #90F;
+			Background: #FFF;
+		}
+		cite.ANALYTIC { Font-Style: Normal }
+		cite.ANALYTIC::BEFORE { Content: Open-Quote }
+		cite.ANALYTIC::AFTER { Content: Close-Quote }
+		code {
+			Font-Family: Monospace;
+			Line-Height: 1;
+		}
+		code.COLOUR {
+			Display: Inline-Block;
+			Border: Thin Solid;
+			Border-Radius: .5CH;
+			Padding: 0 .5CH;
+			Font-Size: Larger;
+		}
+		#hex>code.COLOUR {
+			Display: Block;
+			Box-Sizing: Border-Box;
+			Margin: .5CH 1.5CH 0 0;
+			Padding: 4CH 0 0;
+			Width: 10CH;
+			Height: 10CH;
+			Float: Left;
+			Box-Sizing: Border-Box;
+			Font: Normal XX-Large/1 Monospace;
+			Text-Align: Center;
+		}
+		code.COLOUR.DARK { Color: White }
+		code.HASHTAG { Color: #90F }
+		i.SO-CALLED { Font-Style: Normal }
+		i.SO-CALLED::BEFORE { Content: Open-Quote }
+		i.SO-CALLED::AFTER { Content: Close-Quote }
+		iframe {
+			Display: Block;
+			Box-Sizing: Border-Box;
+			Margin: 0;
+			Border-Style: Inset;
+			Border-Width: .5EX .5CH;
+			Padding: 0;
+			Width: 100%;
+			Height: 48EX;
+			Font: Normal Medium / 1.5 Serif;
+			Overflow: Scroll;
+		}
+		img { Border: None }
+		object {
+			Display: Block;
+			Margin: 0;
+			Border: None;
+			Padding: 0;
+			Width: 100%;
+			Height: 48EX;
+			Color: #FFF;
+			Background: #000;
+			Font: Normal Medium / 1.5 Serif;
+			Overflow: Scroll;
+		}
+		q { Color: #90F }
+		span.PRE { White-Space: Pre-Wrap }
+		h3 span { Font: Small-Caps 1.5EM / 2EX Sans-Serif }
+		#introduction h3 span { Font: Bold 7EX / 1 Sans-Serif }
+		strong { Color: #90F }
+		#backpage strong { Color: Inherit }
+		time { Font-Weight: Bold }
+		u { Text-Decoration: None }
+		u.BLOC {
+			Font-Family: Monospace;
+			Font-Weight: Bold;
+			Font-Variant: Small-Caps;
+		}
+		u.COUNTRY { Font-Family: Monospace }
+		u.FAMILY {
+			Font-Variant: Normal;
+			Text-Transform: Uppercase;
+		}
+		u.GENERIC { Font-Family: Sans-Serif }
+		u.GIVEN, u.PERSON, u.SETTLEMENT { Font-Variant: Small-Caps }
+	</style>
+</head>
+<body>
+	<header id="letterhead">
+		<a href="https://www.cybremonday.deals/">
+			<h1 id="journaltitle">
+				<b class="LOGOTYPE">CYBREMONDAY</b>
+			</h1>
+		</a>
+	</header>
+	<article id="content">
+		<header id="frontpage">
+			<p id="issueno">
+				<b>2018 Issue</b>
+			</p>
+			<h2 id="issuetitle">
+				<b>The CYBRE Manifesto</b>
+			</h2>
+			<p id="edition">
+				<b>Deluxe edition</b>
+			</p>
+			<img id="cover" alt="A greyed‐out man sits in a purple chair. An enormous semi‐transparent tweet with a pixellated texture floats in front of him, facing away, blocking his face. In the background, a distorted Facebook &quot;Trending&quot; pane is visible." src="./cover.png" />
+		</header>
+		<aside id="playlist" role="complementary">
+			<object role="document" data="./Playlist/index.xhtml"></object>
+		</aside>
+		<aside id="warnings" role="note">
+			<p>
+				<abbr title="Content Warning">CW</abbr>:
+				Capitalism,
+				militarism,
+				current events,
+				the <u class="event"><time>2016</time> <abbr title="United States">US</abbr> <u class="ROLE">Presidential</u> election</u>,
+				white supremacy,
+				harrassment,
+				90s‐era trans webpages,
+				appropriation of queer culture,
+				suïcide,
+				homelessness,
+				and
+				sexuäl assault.
+			</p>
+		</aside>
+		<section id="foreward">
+			<p>
+				In the tiny corner of cybrespace known as <a rel="external noopener noreferrer" href="https://en.wikipedia.org/wiki/Fediverse" title="Fediverse | Wikipedia"><i class="MENTION">the fediverse</i></a>, <time datetime="2018-01">January</time> and <time datetime="2018-02">February 2018</time> was a magical time.
+				<strong><time>2017</time> had been a year of painful growth</strong> in a lot of ways, and with the new year folks were looking to <strong>transform what they had learned</strong> into something good the rest of the world could use.
+				Questions of how to connect precariöus queer folks with <strong>financal support</strong>, <strong>material resources</strong>, and even <strong>housing</strong> were discussed regularly among friends and in the timelines; technologies like <u class="GENERAL">ActivityPub</u> were new and fresh and folks were just starting to <strong>explore what it was possible to do</strong>.
+				It was out of this climate that <cite class="MONOGRAPH">The CYBRE Manifesto</cite> was born, penned by myself but drawing upon the various undercurrents that I had detected in those conversations.
+			</p>
+			<p>
+				If the months which followed proved anything, though, it was that <strong>mere passion and inspiration are not enough</strong> to make a difference; eventually, you have to be able to <strong>produce the labour</strong>.
+				Although there was widespread support for <cite class="MONOGRAPH">The CYBRE Manifesto</cite>, <strong>there were no resulting cybre projects</strong>.
+				Instead, the fediverse itself seemed to fracture, with people <strong>burning out</strong>, <strong>getting hurt</strong>, <strong>making enemies</strong>, and <strong>largely looking the other way</strong>.
+			</p>
+			<p>
+				<cite class="MONOGRAPH">The CYBRE Manifesto</cite> calls for a <strong>reïmagining of the cybre as a lived space</strong>, inhabited by living people, with <strong>all the precarity and vulnerability which that entails</strong>.
+				It <strong>rightfully criticizes corporations and governments</strong> for erasing this quality of the cybre dimension, but increasingly over the past year I have become familiar with the ways in which <strong>we perpetuate this erasure ourselves</strong>.
+				I think a <strong>long period of self‐reflection</strong>, <strong>self‐criticism</strong>, and <strong>renewed commitment to growth</strong> is called for in the coming months.
+			</p>
+			<p>
+				Acknowledging precarity and vulnerability means acknowledging that <strong>the people who care for us also need care</strong>, are also human, with flaws and hopes and goals.
+				<strong>We are not states feigning invincibility</strong>; we are hurt, we are traumatized, and <strong>we are reminded of these things every day</strong>.
+				What we need to do a better job of remembering is <strong>the ways in which <em>others</em> experience hurt and trauma</strong> too; <strong>the lens of vulnerability becomes exploitative</strong> when we are the only people we ever conceive of as vulnerable.
+				When we expect others to perfectly accommodate our needs without ever accommodating theirs.
+				If we are going to build a solidarity around shared vulnerability, <strong>it is not enough</strong> to simply state, in the abstract, that all people are vulnerable, and then proceed to <strong>only act according to the axes of vulnerability which personally impact ourselves</strong>.
+			</p>
+			<p>
+				And so, on this <time datetime="2018-11-26"><u class="EVENT">CYBREMONDAY 2018</u></time>, I ask that you all <strong>pause to reflect on the ways</strong> in which the vulnerability of those around you is <strong>erased and made invisible</strong> by the structures of cybrespace.
+				<cite class="MONOGRAPH">The CYBRE Manifesto</cite> <strong>remains just as relevant now</strong> as it did when it was first published almost ten months ago.
+				But <strong>if we are to make progress</strong> on the very difficult tasks which lie before us, it is not sufficient to <strong>merely acknowledge the veracity of its claims</strong>.
+				<strong>We need to get better</strong> <b class="HIGHLIGHT">at</b> <strong>finding each other</strong>, <b class="HIGHLIGHT">at</b> <strong>coming together</strong>, <b class="HIGHLIGHT">at</b> <strong>renewing our commitments</strong>, and <b class="HIGHLIGHT">at</b> <strong>doïng the work required</strong> to make a difference on those things which truly matter.
+				We need to <strong>look inward at ourselves</strong>, and <strong>look proximally at our communities</strong>, <em>before</em> we go about trying to change the world.
+			</p>
+			<footer>
+				<strong>Looking forward to a <em>very</em> cybre <time>2019</time>,</strong><br />
+				<u class="PERSON"><u class="FAMILY">KIBI</u> <u class="GIVEN">Gô</u></u>, <cite class="JOURNAL"><b class="LOGOTYPE">CYBREMONDAY</b></cite> editor
+			</footer>
+		</section>
+		<section id="introduction">
+			<h3>
+				<a href="#introduction">🔗</a>
+				<span>Cybre<br />is<br />…?</span>
+			</h3>
+			<div class="GROUPED">
+				<p>
+					In <time>1995</time>, during their annuäl <u class="EVENT">Word‐of‐the‐Year</u> vote, the <u class="ORGANIZATION">American Dialect Society</u> announced <i class="MENTION">cyber</i> as one of <a rel="external noopener noreferrer" href="https://www.americandialect.org/woty/all-of-the-words-of-the-year-1990-to-present#1994" title="All of the Words of the Year, 1990 to Present § 1994 Word of the Year | American Dialect Society">the <time>1994</time> words of the year</a>.
+				</p>
+				<table class="SPLIT">
+					<tbody>
+						<tr>
+							<td>
+								<p>
+									The <u class="ORGANIZATION"><abbr title="American Dialect Society">ADS</abbr></u> glossed <i class="MENTION">cyber</i> as <q>pertaining to computers and electronic communication</q>.
+									The other word for that year—it was a tie—was, perhaps presciëntly, <i class="MENTION">morph</i>, to change form.
+								</p>
+							</td>
+							<td>
+								<p>
+									As someone who was born in <time>1994</time>, I have witnessed the evolution of this term firsthand, alongside my own personal development.
+									As such, it seems only fitting that I should be the one to write this now.
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>
+				For most of my life, the word <i class="MENTION">cyber</i> has seemed largely an anachronism, evoked for a sense of <strong>90s‐era nostalgia</strong>, recalling a time when <u class="BLOC">the Internet</u> and computers were considered <strong>an exciting new world of untold possibilities</strong> rather than an <strong>everpresent, integrated (and often troubling) part</strong> of our day‐to‐day lives.
+				In stark contrast are the ways the word has persisted in the common vernacular, through phrases such as <i class="MENTION">cyberwarfare</i>, <i class="MENTION">Cyber Monday</i>, and <i class="MENTION">cyberpunk</i>—signalling <strong>militarism</strong>, <strong>capitalism</strong>, and <strong>dystopia</strong>, respectively; instead of the naïve optimism of the 90s, the <i class="MENTION">cyber</i> of the present‐day connotates <em>all of the fraughtness and danger that our interconnected technological networks have the potential to contain</em>.
+			</p>
+			<p>
+				When <u class="PERSON"><u class="GIVEN">Donald</u> <u class="FAMILY">Trump</u></u> made his <a rel="external noopener noreferrer" title="The first Trump-Clinton presidential debate transcript, annotated | The Washington Post" href="https://www.washingtonpost.com/news/the-fix/wp/2016/09/26/the-first-trump-clinton-presidential-debate-transcript-annotated/">viral remarks</a> about <q>the cyber</q> in the first presidential debate, and as concerns about <u class="country">Russian</u> hacking and botnets took hold, some presciënt commentators on <u class="country">Twitter</u> remarked that <time>2017</time> might well end up beïng <q>the year of the cyber</q>.
+				And indeed, over the course of the past year we certainly <em>have</em> seen an increase in discussion and rhetoric pertaining to:
+			</p>
+			<ul>
+				<li>
+					<strong><a rel="external noopener noreferrer" title="Fake news and botnets: how Russia weaponised the web | The Guardian" href="https://www.theguardian.com/technology/2017/dec/02/fake-news-botnets-how-russia-weaponised-the-web-cyber-attack-estonia"><i class="SO-CALLED">Cyberwarfare</i></a></strong>
+				</li>
+				<li>
+					Social media (especially <u class="COUNTRY">Facebook</u>, <u class="COUNTRY">Twitter</u>)'s <strong><a rel="external noopener noreferrer" title="Facebook is well aware that it can influence elections | CNNMoney" href="http://money.cnn.com/2016/11/17/technology/facebook-election-influence/index.html">influënce on public opinion</a></strong>
+				</li>
+				<li>
+					The <strong><a rel="external noopener noreferrer" title="Tech is not winning the battle against white supremacy | TechCrunch" href="https://techcrunch.com/2017/08/16/hatespeech-white-supremacy-nazis-social-networks/">complacency</a></strong> of technological institutions with <strong>hostile (white‐supremacist) political thought</strong>
+				</li>
+				<li>
+					The <strong><a rel="external noopener noreferrer" title="Trump Completes Repeal of Online Privacy Protections From Obama Era | The New York Times" href="https://www.nytimes.com/2017/04/03/technology/trump-repeal-online-privacy-protections.html">violation</a>
+						of digital privacy</strong>, both by state governments, and by corporations
+				</li>
+				<li>
+					The continued, unending, <strong><a rel="external noopener noreferrer" title="It’s not just Google — many major tech companies are struggling with diversity | Recode" href="https://www.recode.net/2017/8/7/16108122/major-tech-companies-silicon-valley-diversity-women-tech-engineer">lack</a>
+						of diversity</strong>, in the tech sector
+				</li>
+				<li>
+					<strong><a rel="external noopener noreferrer" title="Twitter Is Still Dismissing Harassment Reports And Frustrating Victims | BuzzFeed" href="https://www.buzzfeed.com/charliewarzel/twitter-is-still-dismissing-harassment-reports-and">Harrassment</a></strong>, <strong><i class="SO-CALLED">toxicity</i></strong>, and <strong>oppression</strong> online
+				</li>
+			</ul>
+			<p>
+				Certainly, these topics carry with them <strong>a threat of risk and danger to the people of the world</strong>.
+				However, when analysing the <em>reäctions</em> that these situätions have invoked (<i class="SO-CALLED">fighting <i class="SO-CALLED">cyber</i> with <i class="SO-CALLED">cyber</i></i>; the continuïng lack of accountability of large corporations for the content they distribute <em>or</em> their encroachments into their users' lives; the continuïng rise of online hate and harrassment campaigns—with no end in sight), one begins to wonder <strong>whether they are indeed the threat to the social order that they have been made out to be</strong>, or if they are, in fact, <strong><em>symptomatic of</em></strong> and <strong><em>integral to</em></strong> the present shape of power in modern sociëty.
+				<b class="HIGHLIGHT"><em>We are told</em></b> <i class="SO-CALLED">cyberwarfare</i> <a rel="external noopener noreferrer" title="Cyberwarfare greater threat to US than terrorism, say security experts | Aljazeera America" href="http://america.aljazeera.com/articles/2014/1/7/defense-leaders-saycyberwarfaregreatestthreattous.html">puts our lives in danger</a>, but that <strong>the only <a rel="external noopener noreferrer" title="UK warned that Russian threat requires increased defence spending | The Guardian" href="https://www.theguardian.com/politics/2018/jan/22/uk-faces-cyber-warfare-threat-on-battlefield-and-against-civilian-services">solution</a> is <a rel="external noopener noreferrer" title="Michael Fallon: Britain using cyber warfare against IS | BBC News" href="http://www.bbc.com/news/uk-37721147">more</a> <a rel="external noopener noreferrer" title="Pentagon wages cyberwar against Islamic State | Los Angeles Times" href="http://www.latimes.com/nation/la-fg-isis-cyber-20160228-story.html"><i class="SO-CALLED">cyberwarfare</i></a></strong>.
+				<b class="HIGHLIGHT"><em>We are told</em></b> social media has an <a rel="external noopener noreferrer" title="Former Facebook Executive Says Social Media Exploits Human ‘Vulnerability’ | HuffPost" href="https://www.huffingtonpost.com/entry/facebook-sean-parker-human_us_5a0468d8e4b0f76b05c3d65a">undue influënce</a> in our lives, but <strong><a rel="external noopener noreferrer" title="Facebook enables 'fake news' by reliance on digital advertising – report | The Guardian" href="https://www.theguardian.com/technology/2018/jan/31/facebook-fake-news-disinformation-digital-advertising-report-news-feed">this</a> <a rel="external noopener noreferrer" title="Mark Zuckerberg says he doesn't want Facebook to edit news because its users can do it better | CNBC" href="https://www.cnbc.com/2018/02/02/mark-zuckerberg-doesnt-want-to-be-your-news-editor.html">only</a> <a rel="external noopener noreferrer" title="Twitter announces new ‘transparency center’ for ads | TechCrunch" href="https://techcrunch.com/2017/10/24/twitter-advertising-transparency/">produces</a> <a rel="external noopener noreferrer" title="Facebook lost daily users for the first time ever in the U.S. and Canada | Recode" href="https://www.recode.net/2018/1/31/16957122/facebook-daily-active-user-decline-us-canda-q4-earnings-2018">more</a> <a rel="external noopener noreferrer" title="Facebook tells Congress it can't prove or disprove Trump-Russia collusion | The Hill" href="http://thehill.com/policy/technology/370806-facebook-tells-senators-it-cannot-prove-or-disprove-collusion-between-trump">social</a> <a rel="external noopener noreferrer" title="Instagram to show posts in order of 'relevance,' like Facebook's news feed | Los Angeles Times" href="http://www.latimes.com/business/technology/la-fi-tn-instagram-feed-20160315-story.html">media</a> <a rel="external noopener noreferrer" title="Twitter admits overstating user numbers for years | CNNMoney" href="http://money.cnn.com/2017/10/26/technology/business/twitter-earnings/index.html">coverage</a></strong>.
+				<b class="HIGHLIGHT"><em>We are told</em></b> <a rel="external noopener noreferrer" title="The Resurgent Threat of White-Supremacist Violence | The Atlantic" href="https://www.theatlantic.com/politics/archive/2018/01/the-resurgent-threat-of-white-supremacist-violence/550634/">white‐supremacy is a threat</a>, but <strong>it is <a rel="external noopener noreferrer" title="How YouTube Became the Worldwide Leader in White Supremacy | New Republic" href="https://newrepublic.com/article/144141/youtube-became-worldwide-leader-white-supremacy">allowed</a> <a rel="external noopener noreferrer" title="This Was the Alt-Right’s Favorite Chat App. Then Came Charlottesville. | The New York Times" href="https://www.nytimes.com/2017/08/15/technology/discord-chat-app-alt-right.html">to</a> <a rel="external noopener noreferrer" title="White nationalist movement growing much faster than Isis on Twitter, study finds | The Independent" href="http://www.independent.co.uk/news/world/americas/white-nationalist-movement-twitter-faster-growth-isis-islamic-state-study-a7223671.html">run</a> <a rel="external noopener noreferrer" title="How Reddit Became a Worse Black Hole of Violent Racism than Stormfront | Gawker" href="http://gawker.com/how-reddit-became-a-worse-black-hole-of-violent-racism-1690505395">rampant</a> across our digital networks</strong>.
+				<b class="HIGHLIGHT"><em>We are told</em></b> <a rel="external noopener noreferrer" title="Facebook’s Privacy Principles | Facebook" href="https://www.facebook.com/about/basics/privacy-principles">privacy matters</a>, but <strong><a rel="external noopener noreferrer" title="The Perpetual Line-up | Georgetown Law Center on Privacy &amp; Technology" href="https://www.perpetuallineup.org/">states</a> and <a rel="external noopener noreferrer" title="Three quarters of Android apps track users with third party tools – study | The Guardian" href="https://www.theguardian.com/technology/2017/nov/28/android-apps-third-party-tracker-google-privacy-security-yale-university">corporations</a> <a rel="external noopener noreferrer" title="Face Matching Services | Australian Government Attorney-General's Department" href="https://www.ag.gov.au/RightsAndProtections/IdentitySecurity/Pages/Face-verification-service.aspx">take</a> <a rel="external noopener noreferrer" title="The House just voted to wipe away the FCC’s landmark Internet privacy protections | The Washington Post" href="https://www.washingtonpost.com/news/the-switch/wp/2017/03/28/the-house-just-voted-to-wipe-out-the-fccs-landmark-internet-privacy-protections/">further</a> and <a rel="external noopener noreferrer" title="Your battery status is being used to track you online | The Guardian" href="https://www.theguardian.com/technology/2016/aug/02/battery-status-indicators-tracking-online">further</a> <a rel="external noopener noreferrer" title="Advertisers Might Already Be Using Your Phone’s Hardware to Track You | Motherboard" href="https://motherboard.vice.com/en_us/article/4xanjj/advertisers-might-already-be-using-your-phones-hardware-to-track-you-device-fingerprinting">action</a> to encroach upon it</strong>.
+				<b class="HIGHLIGHT"><em>We are told</em></b> <a rel="external noopener noreferrer" title="Inclusion &amp; Diversity | Apple" href="https://www.apple.com/diversity/">diversity</a> <a rel="external noopener noreferrer" title="Inclusion &amp; Diversity | Twitter" href="https://careers.twitter.com/en/diversity.html">is</a> <a rel="external noopener noreferrer" title="Diversity | Google" href="https://diversity.google/">a</a> <a rel="external noopener noreferrer" title="Facebook Diversity Update: Building a more diverse, inclusive workforce | Facebook Newsroom" href="https://fbnewsroomus.files.wordpress.com/2017/08/fb_diversity_2017_final.pdf">priority</a>, but <strong>we have <a rel="external noopener noreferrer" title="Apple’s diversity chief out after outcry | New York Post" href="https://nypost.com/2017/11/17/apples-diversity-chief-lasts-just-six-months/">yet</a> <a rel="external noopener noreferrer" title="eBay Publishes its Diversity Numbers | Fortune" href="http://fortune.com/2017/03/24/ebay-publishes-its-diversity-numbers/">to</a> <a rel="external noopener noreferrer" title="The Dirty War Over Diversity Inside Google | WIRED" href="https://www.wired.com/story/the-dirty-war-over-diversity-inside-google/">see</a> <a rel="external noopener noreferrer" title="Microsoft reports modest diversity gains, boosted by LinkedIn workforce and hiring initiatives | GeekWire" href="https://www.geekwire.com/2017/microsoft-reports-modest-diversity-gains-boosted-linkedin-workforce-hiring-initiatives/">it</a> <a rel="external noopener noreferrer" title="Facebook on hiring more minorities: 'It's complicated' | CNBC" href="https://www.cnbc.com/2017/08/02/facebook-diversity-numbers.html">meaningfully</a> <a rel="external noopener noreferrer" title="It's 2017 and Amazon only has one woman among its 18 most powerful executives | Recode" href="https://www.recode.net/2017/10/21/16512448/amazon-gender-diversity-leadership-executives-jeff-bezos">materialize</a> <a rel="external noopener noreferrer" title="Intel's diversity report shows slow growth for women and minorities | Engadget" href="https://www.engadget.com/2017/08/15/intel-diversity-report-slow-growth-women-and-minorities/">in</a> <a rel="external noopener noreferrer" title="'Dear diversity hire...' Amazon's weapons-grade fail in recruitment email to woman techie | The Register" href="https://www.theregister.co.uk/2017/09/28/amazon_web_services_fumbles_diversity_recruiting_email/">any</a> <a rel="external noopener noreferrer" title="Twitter users are diverse but not its staff | USA Today" href="https://www.usatoday.com/story/tech/news/2017/01/19/twitter-diversity-2016/96749454/">form</a></strong>.
+				<b class="HIGHLIGHT"><em>We are told</em></b> that <a rel="external noopener noreferrer" title="Twitter's Winning the War on Harassment—So Says Twitter | WIRED" href="https://www.wired.com/story/twitter-harassment-update/">harrassment</a> is <a rel="external noopener noreferrer" title="Community Standards § Bullying and Harassment | Facebook" href="https://www.facebook.com/communitystandards#bullying-and-harassment">unacceptable</a>, but <strong><a rel="external noopener noreferrer" title="Twitter's Harassment Problem Is Baked Into Its Design | The Atlantic" href="https://www.theatlantic.com/technology/archive/2017/10/twitters-harassment-problem-is-baked-into-its-design/542952/">sites</a> and <a rel="external noopener noreferrer" title="YouTube’s big problem has always been its algorithm, not kids programming | Polygon" href="https://www.polygon.com/2017/11/7/16620400/youtube-algorithm-kids-programming">algorithms</a> remain <a rel="external noopener noreferrer" title="How Google's search algorithm spreads false information with a rightwing bias | The Guardian" href="https://www.theguardian.com/technology/2016/dec/16/google-autocomplete-rightwing-bias-algorithm-political-propaganda">designed</a> to help it grow</strong>.
+			</p>
+			<p>
+				The words do not line up with the facts.
+				<strong>Far from a threat to sociëty, these unsavory aspects of <i class="SO-CALLED">cyberspace</i> seem to be part‐and‐parcel with its normal operation and expected functioning.</strong>
+				And—at the same time—<strong>other stories are not beïng told</strong>.
+				<b class="HIGHLIGHT">The</b> indie <strong>artists and musicians struggling (and, often, <em>succeeding</em>) to find audiënces amidst the massive centralization, appropriation, and commodification of virtuälly every artform.
+				<b class="HIGHLIGHT">The</b> networks of <strong>trans folx providing each other with care and support</strong> sorely lacking in sociëty at‐large.
+				<b class="HIGHLIGHT">The</b> communities of friends, activists, and lovers</strong>, working together, in their spare time, for little‐to‐no pay, to design and implement systems which will help to liberate them from capitalism's hold.
+				<strong>Some of these are not stories so much as sensations.</strong>
+				The <strong>warmth of a screen</strong> on a long, darkened road.
+				The <strong>buzz of your partner</strong> after an anxious night alone.
+			</p>
+			<p>
+				<strong>We must consider the consequences of conceiving of the digital landscape as one of pure capitalistic exploitation and military expansion, in which the lives and needs of its inhabitants are supernumerary and inconsequential (except as subscribers, customers, or subjects) to the machinations of power at play.</strong>
+				If this is indeed the shape that <i class="SO-CALLED">cyber</i> space takes on today, <strong><em>might we not need a new kind of fraughtness</em></strong>, one which <strong>challenges this social order</strong> and <strong>reässerts the value of life and community</strong> in our day‐to‐day interactions online?
+				To put the question another way:
+				Is <em>this</em> (capitalism, militarism, exploitation, oppression) all that <q>computers and electronic communication</q> can be?
+				Or <strong><em>are there other landscapes imaginable?</em></strong>
+			</p>
+			<p>
+				Pursuïng this question is what <dfn id="dfn.cybre_theory">cybre theory</dfn> is all about.
+				It is a <strong>queering of conventional <i class="SO-CALLED">cyber</i> discourse</strong> to shed light on the <strong>personal</strong>, the <strong>intimate</strong>, the <strong>community</strong>, the <strong>many and varied bonds</strong> which tie us together through technology outside of pure capitalistic norms.
+				<strong>It is also a call to action</strong> against those systems and structures which seek to oppress, control, and ultimately erase these bonds from existence.
+			</p>
+			<p>
+				<cite class="JOURNAL"><b class="LOGOTYPE">CYBREMONDAY</b></cite> is a casuäl webzine aimed at elucidating conversations and ideäs, questioning existing narratives, and promoting discussion regarding life and culture in (cyber/cybre)space.
+				This is its zeroth issue.
+			</p>
+		</section>
+		<nav id="toc">
+			<h3>In this issue…</h3>
+			<ol start="0">
+				<li>
+					<a href="#introduction">Introduction: <strong><cite class="ANALYTIC">Cybre is…?</cite></strong></a>
+				</li>
+				<li>
+					<a href="#knowledge-power"><strong><cite class="ANALYTIC">Seizing the Means of Knowledge‐Production</cite></strong></a>
+				</li>
+				<li>
+					<a href="#pride"><strong><cite class="ANALYTIC">Cybre Pride</cite></strong></a>
+				</li>
+				<li>
+					<a href="#messaging"><strong><cite class="ANALYTIC">The Message is not the Message; or, Virality is not the Cure</cite></strong></a>
+				</li>
+			</ol>
+		</nav>
+		<section id="knowledge-power">
+			<h3>
+				<a href="#knowledge-power">🔗</a>
+				<span>Seizing the Means of Knowledge‐Production</span>
+			</h3>
+			<p>
+				Over the past few years, the landscape has shifted dramatically in terms of how we talk about the internet.
+				In one sense, this is to say:
+				<strong>We talk about it at all</strong>.
+				<u class="COUNTRY">Twitter</u>, <u class="COUNTRY">Facebook</u>, et al receive mainstream treatment in the daily news as questions arise regarding everything from <a rel="external noopener noreferrer" title="Trump's tweets central to legal cases on dossier, travel ban and more | CNNPolitics" href="https://www.cnn.com/2017/12/28/politics/trump-tweets-legal-cases-official-statements/">their use</a> by government officials to <a rel="external noopener noreferrer" title="Facebook, admitting it can be bad for democracy, tries to end voter meddling before midterms | USA Today" href="https://www.usatoday.com/story/tech/2018/01/22/facebook-tries-wipe-out-election-meddling-before-2018-midterms/1055710001/">their role</a> in the <u class="EVENT"><time>2016</time> <u class="COUNTRY"><abbr title="United States">US</abbr></u> <u class="ROLE">Presidential</u> election</u>; bugs like <a rel="external noopener noreferrer" title="The Heartbleed Bug" href="http://heartbleed.com/"><u class="GENERIC">Heartbleed</u></a> and <a rel="external noopener noreferrer" title="Meltdown and Spectre" href="https://spectreattack.com/"><u class="GENERIC">Spectre</u></a> become issues of international concern; <a rel="external noopener noreferrer" title="Jailed Russian hacker: I hacked Democrats 'under the command' of Russian intelligence agents | Business Insider" href="www.businessinsider.com/russian-hacker-democrats-dnc-intelligence-2017-12">hackers</a> and <a rel="external noopener noreferrer" title="How a Dorm Room Minecraft Scam Brought Down the Internet | WIRED" href="https://www.wired.com/story/mirai-botnet-minecraft-scam-brought-down-the-internet/">botnets</a> and <a rel="external noopener noreferrer" title="The Meme Of The Year | MTV News" href="http://www.mtv.com/news/2962388/the-meme-of-the-year/"><i class="SO-CALLED">those damn emails</i></a> have now dominated political discussions for over a year.
+			</p>
+			<p>
+				Creäted by mass media for an (inter)national audiënce, these stories typically centre on big businesses, large governments, or—occasionally—one or two problematic individuäls who have managed to make something difficult for the aformentioned.
+				<strong>Gone are the days</strong> of talking about <em><i class="SO-CALLED">internet communities</i></em> and <em><i class="SO-CALLED">digital uprising</i></em>—acknowledging the <strong>radical transformative potential</strong> of cybre movements like <code class="HASHTAG">#ArabSpring</code> ceased quickly once <code class="HASHTAG">#BlackLivesMatter</code> showed that <strong>it could happen in <u class="COUNTRY">the States</u> too</strong>.
+				Instead, internet spaces are construed as <strong>political in the worst way</strong>—a politics of <strong>pure, empty strucutres</strong>, devoid of life and material consequence, <strong>interacting like clockwork</strong> according to the forces of power at play.
+			</p>
+			<blockquote>
+				<p>
+					How far do we have to stretch<br /><span class="PRE">	</span>the picture,<br />Before pixellating<br /><span class="PRE">	</span>the human texture?
+				</p>
+				<footer>
+					<u class="PERSON">nujabes</u> <abbr title="featuring">ft.</abbr> <u class="PERSON">Shing02</u>.
+					<a rel="external noopener noreferrer" title="Nujabes - luv (sic.) pt 3 [ft.shing02] | YouTube" href="https://www.youtube.com/watch?v=UyoYf7rZVGI"><cite class="ANALYTIC">Luv(sic.), <abbr title="Part">Pt.</abbr> 3</cite></a>.
+					In <cite class="MONOGRAPH">Modal Soul</cite>.
+					<u class="ORGANIZATION">Hydeout Productions</u>, <time datetime="2015-11-11">11 November 2015</time>.
+				</footer>
+			</blockquote>
+			<p>
+				While woefully inaccurate, speaking about the internet as though it were devoid of inhabitants <strong>serves the interests</strong> of <strong>those who seek to exploit it</strong>, ethical concerns—and even personal agency—fading into the distance on such a broad scale.
+				As an (to varyïng degrees) open publishing platform, there is nothing which can be done to <em>directly</em> inhibit the <strong>publishing of counternarratives</strong> or the recognition of individual or collective life, voice, and agency online.
+				However, <strong>these things can be easily dismissed</strong> so long as they can be classified as <i class="SO-CALLED">offtopic</i> or <i class="SO-CALLED">irrelevant</i>—and in an age where the <i class="SO-CALLED">relevance</i> of knowledge is <strong>largely determined by corporate algorithms</strong> (à la <u class="ORGANIZATION">Bing</u>, <u class="ORGANIZATION">Twitter</u>, <u class="ORGANIZATION">Facebook</u>, <u class="ORGANIZATION">Google</u>), this is no small matter.
+				In an internet which overflows with <em>information</em>, we have <strong>given up the means</strong> of producing our own <em>knowledge</em>—and it is <strong>well past time</strong> to take those back.
+			</p>
+			<p>
+				Consequently, it is imperative that we not only concentrate our efforts on the <em>publishing</em> of cybre narratives, but that we also <strong>repeatedly and unrelentingly affirm these narratives as important, topical, and meaningful</strong>, at least as much as those being published on a grander scale.
+				<strong>As content which runs counter to the normative gaze of <i class="SO-CALLED">relevance</i></strong>, such stories will <em>by definition</em> be <strong>difficult to discover through <em>conventional</em> means</strong>—and, in many ways, this is desirable.
+				But it means that <strong>we must develop a practice of actively promoting, sharing in, and involving ourselves, on the community level, with these conversations</strong>, and create <em>other</em> passages through which they might be seen or heard.
+			</p>
+			<p>
+				The goal here is not to push radical narratives into the mainstream discourse so much as it is to <strong>decentre the mainstream discourse as the be‐all and end‐all of what matters to us, our loved ones, and our communities</strong>.
+				The (inter)national politick will always be of concern to the people, but this does not imply that the people should be solely concerned with the (inter)national politick.
+				Cybre shops local.
+				And so it goes.
+			</p>
+		</section>
+		<section id="pride">
+			<h3>
+				<a href="#pride">🔗</a>
+				<span>Cybre Pride</span>
+			</h3>
+			<p>
+				<strong>I was only 14</strong> when <u class="ORGANIZATION">Yahoo</u> <a rel="external noopener noreferrer" title="Yahoo Quietly Pulls The Plug On Geocities | TechCrunch" href="https://techcrunch.com/2009/04/23/yahoo-quietly-pulls-the-plug-on-geocities/">announced</a> that <strong><u class="COUNTRY">GeoCities</u> in the <u class="COUNTRY">United States</u> would be shut down</strong>—as my internet history at the time consisted almost entirely of <u class="COUNTRY">RuneScape</u> and <u class="SETTLEMENT">Wikipedia</u>, it's safe to say that the event hardly registered on my radar.
+				I didn't even really learn what <u class="COUNTRY">GeoCities</u> <em>was</em> until much later, through websites like <a rel="external noopener noreferrer" href="http://oneterabyteofkilobyteage.tumblr.com/"><i class="SERIES">One Terabyte of Kilobyte Age Photo Op</i></a> and browsing the collection in <a rel="external noopener noreferrer" href="https://archive.org/web/geocities.php"><cite class="SERIES">the Internet Archive</cite></a>.
+				This discovery came roughly synonymously with my decision to switch to a <u class="ORGANIZATION">Gender Studies</u> major, and so naturally I found myself <strong>wandering the streets of <u class="SETTLEMENT">WestHollywood</u></strong>, browsing the homepages of an <abbr title="Lesbian, Gay, Bisexual, and Transgender">LGBT</abbr> community of years gone by.
+			</p>
+			<p>
+				Some of what I discovered there, I had <strong>expected to find</strong>:
+				<b class="HIGHLIGHT">The</b> <strong>homewrought, old‐fashioned look and feel</strong> of the pages; <b class="HIGHLIGHT">the</b> <strong>inconsistent</strong> (often within the same page) <strong>rhetoric and terminology</strong>; <b class="HIGHLIGHT">the</b> <strong>frequent fetishization and sexuälization</strong> of queer—especially trans—bodies; <b class="HIGHLIGHT">the</b> <strong>stories of struggle and queer oppression</strong>; <b class="HIGHLIGHT">the</b> <strong>vibrant—if somewhat under‐the‐surface—community</strong>, using the tools they had available to persist through it all.
+				Other things, perhaps betraying my naïveté, <strong>caught me completely by surprise</strong>; for example, the <strong>long, legalistic introductory pages</strong> which demanded that visitors be a legal adult before even <em>beginning</em> to look at information on being trans or gay.
+			</p>
+			<figure id="fig.geocities">
+				<iframe src="./Embeds/GeoCities/index.html">
+					Example GeoCities warning page.
+				</iframe>
+			</figure>
+			<p>
+				<strong>In modern times</strong>, of course, the situätion has—at least on the surface—changed.
+				<a rel="external noopener noreferrer" title="LGBTQ@Facebook | Facebook" href="https://www.facebook.com/LGBTQ/">Tech</a> <a rel="external noopener noreferrer" title="Apple Celebrates Pride During Parades in San Francisco, New York City, and Toronto | Mac Rumors" href="https://www.macrumors.com/2017/06/25/apple-celebrates-pride-parades/">corporations</a> <a rel="external noopener noreferrer" title="Twitter's LGBTQ heart emoji just got an inclusive update for Pride Month | Mashable" href="https://mashable.com/2017/06/01/lgbtq-pride-month-twitter-emoji/">across</a> <a rel="external noopener noreferrer" title="A New Symbol of IBM’s Diversity Leadership | IBM THINKPolicy" href="https://www.ibm.com/blogs/policy/diversity-rainbow-8bar/">the</a> <a rel="external noopener noreferrer" title="Celebrating Pride 2017 on Instagram | Instagram Press" href="https://instagram-press.com/blog/2017/05/31/pride-2017/">board</a> <strong><a rel="external noopener noreferrer" title="#ShowUp | Google" href="https://pride.google/">openly</a> <a rel="external noopener noreferrer" title="Take Your Stories Over The Rainbow With Snapchat's Pride-Themed Creative Tools | Refinery29" href="http://www.refinery29.com/2017/06/159161/snapchat-pride-creative-tools-2017">celebrate</a></strong> <a rel="external noopener noreferrer" title="#ProudToBe: Celebrate Brave Voices this Pride | YouTube" href="https://www.youtube.com/watch?v=uem7QFp0uKY">gay</a> <a rel="external noopener noreferrer" title="Ride With Pride | Uber" href="https://www.uber.com/info/pride/">pride</a> <a rel="external noopener noreferrer" title="Microsoft Pride: This is who I am | Microsoft Life" href="https://blogs.microsoft.com/jobs/microsoft-pride-this-is-who-i-am/">and</a> <a rel="external noopener noreferrer" title="Pride | Spotify" href="https://open.spotify.com/view/pride-page"><abbr title="Lesbian, Gay, Bisexual, and Transgender">LGBT</abbr></a> <a rel="external noopener noreferrer" title="This Pride, Support Equal Rights for Everyone | Lyft Blog" href="https://blog.lyft.com/posts/2017/6/5/this-pride-support-equal-rights-for-everyone">communities</a>.
+				Mainstream online press <strong>features <a rel="external noopener noreferrer" title="Queer Voices | HuffPost" href="https://www.huffingtonpost.com/section/queer-voices">explicit</a> <a rel="external noopener noreferrer" title="Buzzfeed LGBT" href="https://www.buzzfeed.com/lgbt">queer</a> <a rel="external noopener noreferrer" title="LGBT | MSNBC" href="http://www.msnbc.com/lgbt">sections</a></strong>, and <strong>queer media is promoted</strong> to users through services like <u class="ORGANIZATION">Spotify</u> and <u class="ORGANIZATION">Netflix</u>.
+				From a cursory glance at these websites, it seems the fight for cybre queer representation has <strong>already been won</strong>.
+			</p>
+			<p>
+				Under the surface, though, things are much the same.
+				Queer—especially trans—users are <strong><a rel="external noopener noreferrer" title="Twitter Has a Transgender Problem | The New York Times" href="https://www.nytimes.com/2017/11/02/opinion/twitter-transgender-harassment-problem.html">frequently</a> <a rel="external noopener noreferrer" title="Android and Google+ confusion outs trans woman | The Guardian" href="https://www.theguardian.com/technology/2014/jan/07/google-hangouts-faces-criticism-after-outing-trans-woman">mistreated</a> <a rel="external noopener noreferrer" title="Twitter’s New Verification Process is a Game Rigged Against Its Marginalized Users | Model View Culture" href="https://modelviewculture.com/pieces/twitters-new-verification-process-is-a-game-rigged-against-its-marginalized-users">or</a> <a rel="external noopener noreferrer" title="My name is only real enough to work at Facebook, not to use on the site | Medium" href="https://medium.com/@zip/my-name-is-only-real-enough-to-work-at-facebook-not-to-use-on-the-site-c37daf3f4b03">banned</a></strong> from social media; queer content and resources <strong><a rel="external noopener noreferrer" title="Facebook’s Hate Speech Policies Censor Marginalized Users | WIRED" href="https://www.wired.com/story/facebooks-hate-speech-policies-censor-marginalized-users/">continue</a> to be <a rel="external noopener noreferrer" title="Why is Instagram censoring a 1992 poem revered by the LGBTQ community?" href="https://qz.com/1190263/why-is-instagram-censoring-zoe-leonards-poem-from-1992/">restricted</a></strong>, <a rel="external noopener noreferrer" title="YouTube's Restricted Mode Is Hiding Some LGBT Content | Gizmodo" href="https://gizmodo.com/youtubes-restricted-mode-is-hiding-some-lgbt-content-1793382337">especially</a> from <a rel="external noopener noreferrer" title="Twitter was flagging tweets including the word &quot;queer&quot; as potentially &quot;offensive content&quot; | Mic" href="https://mic.com/articles/180601/twitter-was-flagging-tweets-including-the-word-queer-as-potentially-offensive-content">younger</a> <a rel="external noopener noreferrer" title="Why Are Tumblr, Twitter, And YouTube Blocking LGBTQ+ Content? | The Establishment" href="https://theestablishment.co/why-are-tumblr-twitter-and-youtube-blocking-lgbtq-content-e54e7acf4b5c">users</a>.
+				<strong>And there are newer problems as well.</strong>
+				<b class="HIGHLIGHT">The</b> ever‐increasing focus on a <strong>white and/or privileged</strong> gay experience; <b class="HIGHLIGHT">the</b> <strong>emphasis on allies</strong> and <i class="SO-CALLED">showing support</i> over providing material help or change; <b class="HIGHLIGHT">the</b> <strong>appropriation of queer narratives and trauma</strong> for clickbait income.
+			</p>
+			<p>
+				In fact, despite appearances, when it comes to <strong>connecting people with resources</strong> or <strong>accurately reflecting the queer experiënce</strong> online, <strong><em>things might be worse than ever</em></strong>.
+				The steady encroachment on personal and nonprofit websites by <u class="ORGANIZATION">Google</u>, <u class="ORGANIZATION">Facebook</u>, and <u class="ORGANIZATION">Amazon</u>—as well as the postweb internet of <u class="PERSON">Alexa</u> and <u class="PERSON">Siri</u>—have restricted both the <strong>amount of information available</strong> and the <strong>kind of community structures allowed</strong> to only that which those providers see fit to approve or design for.
+				As one particularly drastic example: The <u class="ORGANIZATION">International Foundation for Gender Education</u> website <strong><a rel="external noopener noreferrer" title="The International Foundation for Gender Education &amp; Transgender Tapestry | Internet Archive Wayback Machine" href="http://web.archive.org/web/20091104053637/http://www.ifge.org/">was once</a> one of the best resources on the web</strong> for trans information—<strong>now it is little more than a <a rel="external noopener noreferrer" title="The International Foundation for Gender Education" href="http://www.ifge.org/">poorly‐formatted blog</a></strong>.
+			</p>
+			<blockquote>
+				<p>IFGE has offered a Web site containing information for transgender people since 1998. The site was very heavily used by transgender people seeking information on the Internet in the late 1990s and early 2000s, with respondents to a 2002 survey identifying the site as the "best source on the internet," (p.&#xA0;102) preferring the site to <a rel="external noopener noreferrer" title="Google" href="https://en.wikipedia.org/wiki/Google">Google</a> and <a rel="external noopener noreferrer" title="Yahoo" href="https://en.wikipedia.org/wiki/Yahoo">Yahoo</a> for trans-related information seeking.<sup><a rel="external noopener noreferrer" href="https://en.wikipedia.org/wiki/International_Foundation_for_Gender_Education#cite_note-6">[6]</a></sup></p>
+				<footer>
+					<a rel="external noopener noreferrer" title="International Foundation for Gender Education § Web site | Wikipedia" href="https://en.wikipedia.org/wiki/International_Foundation_for_Gender_Education#Web_site"><cite class="ANALYTIC">International Foundation for Gender Education</cite></a>.
+					<a rel="external noopener noreferrer" href="https://en.wikipedia.org/"><cite class="MONOGRAPH">Wikipedia</cite></a>.
+					Last modified <time datetime="2017-01-02">02 January 2017</time>.
+				</footer>
+			</blockquote>
+			<p>
+				Placing gay cybre culture in the hands of companies whose workforces are primarily straight, white, and male <strong>simply doesn't make sense</strong>.
+				Consequently, we must <strong>reclaim and reposition cybre pride</strong> as something which is created under our own authorship, within our own communities.
+				<strong>It is not enough</strong> to merely denounce corporations' gesutres towards <abbr title="Lesbian, Gay, Bisexual, and Transgender">LGBT</abbr> acceptance as hypocritical—we must <strong>provide a counternarrative</strong> which <strong>demonstrates and reäffirms queer pride and community</strong>—in all its forms and complexity, outside the boundaries of what is normative or deemed acceptable in the public sphere.
+			</p>
+			<p>
+				This means <strong>doïng more than just protest</strong> (although, by all means, continue to protest).
+				It means <strong>finding reason to celebrate</strong> and <strong>making queer culture our own</strong>.
+			</p>
+		</section>
+		<section id="messaging">
+			<h3>
+				<a href="#messaging">🔗</a>
+				<span>The Message is not the Message;<br />or, Virality is not the Cure</span>
+			</h3>
+			<p>
+				<strong>It is easy</strong>, when considering and discussing the fraught nature of modern cybrespace—perhaps, when faced with a <cite class="MONOGRAPH">Manifesto</cite>—to think that <strong>the message of cybre <em>is</em> its message</strong>; that the message is self‐justifying, so to speak, and the purpose of cybre discourse is to promote cybre discourse and <strong>not some higher aspiration or aim</strong>.
+				Given this, <strong>virality seems the obvious tack to take</strong>, spreading and sharing content among friends and peers and social networks, arguïng points and jumping into mentions and doing all of the work that propagating a message entails.
+			</p>
+			<p>
+				<strong>This impression is deceiving, and it is wrong.</strong>
+				The message of cybre—the <strong>imagining of a new digital landscape</strong> which respects <strong>life</strong>, <strong>community</strong>, and <strong>our many and varied relationships of support</strong>, in <strong>all their diverse complexity</strong>—is <strong>not something which can be spread</strong> via discourse or social media post, but through <strong>decades of work</strong> to develop the structures <strong>from which these forms might evolve</strong>.
+				Indeed, <strong>insofar as it diverts queer energies</strong> <strong>away from making progress</strong> and <strong>into defending positions</strong>, and <strong>insofar as it centralizes discussion</strong> inside the normative structures <strong>whose dismantling is our ultimate aim</strong>, <strong>discourse is our opponent</strong> in this journey forward.
+			</p>
+			<blockquote>
+				<p>We need fewer well-intentioned essays addressed to bros with good intentions about why sexist language might seem good but is bad. In the tech feminism community, we’ve been writing these essays for most of a decade. The <em>systematic</em> use of abuser tactics to control conversations and shut down criticism continues. These conversations go on and on, and happen over and over, each one seemingly unencumbered by the lessons of the previous one — <em>what’s happening isn’t a conversation at all, but rather, a power struggle</em>.</p>
+				<footer>
+					<u class="PERSON"><u class="GIVEN">Tim</u> <u class="FAMILY">Chevalier</u></u>.
+					<a rel="external noopener noreferrer" href="https://modelviewculture.com/pieces/gendered-language-feature-or-bug-in-software-documentation"><cite class="ANALYTIC">Gendered Language: Feature or Bug in Software Documentation?</cite></a>.
+					In <a rel="external noopener noreferrer" href="https://modelviewculture.com/"><cite class="JOURNAL">Model View Culture</cite></a>, <a rel="external noopener noreferrer" href="https://modelviewculture.com/issues/lean-out"><cite class="MONOGRAPH">Lean Out</cite></a>.
+					<a rel="external noopener noreferrer" href="http://feministtechnologycollective.com/"><u class="ORGANIZATION">Feminist Technology Collective</u></a>, <time datetime="2014-02-24">24 February 2014</time>.
+				</footer>
+			</blockquote>
+			<p>
+				<strong>Far from a quick path to success</strong>, virality has proven itself over the past few years to be a <strong>source of violence and harrassment</strong> in exchange for <strong>little or no material gain</strong>.
+				Almost by definition, in order to reach a viral state, a message must first be <strong>reduced and reformatted</strong> into something which is <strong>palatable to the mainstream</strong>.
+				In doïng so, the <strong>fundamental urgency and nuänce</strong> of the original is invariably lost.
+				<strong>Viral moments are ephemeral</strong>, burning quickly and then vanishing as the next takes centrestage.
+				But <strong>the cybre project is persistent, ongoing, continuäl</strong>, reaching back to the very first days of networked connectivity and forward into futures unknown.
+			</p>
+			<blockquote>
+				<p>As separate spectacles, we are less threatening.</p>
+				<footer>
+					<u class="PERSON"><u class="GIVEN">Suey</u> <u class="FAMILY">Park</u></u> &amp; <u class="PERSON"><u class="GIVEN">Eunsong</u> <u class="FAMILY">Kim</u></u>.
+					<a rel="external noopener noreferrer" href="https://modelviewculture.com/pieces/hashtags-as-decolonial-projects-with-radical-origins"><cite class="ANALYTIC">Hashtags as Decolonial Projects with Radical Origins</cite></a>.
+					In <a rel="external noopener noreferrer" href="https://modelviewculture.com/"><cite class="JOURNAL">Model View Culture</cite></a>, <a rel="external noopener noreferrer" href="https://modelviewculture.com/issues/mythology"><cite class="MONOGRAPH">Mythology</cite></a>.
+					<a rel="external noopener noreferrer" href="http://feministtechnologycollective.com/"><u class="ORGANIZATION">Feminist Technology Collective</u></a>, <time datetime="2014-03-17">17 March 2014</time>.
+				</footer>
+			</blockquote>
+			<p>
+				In some ways, the project of discourse is <strong>doomed from the start</strong>.
+				<strong>How to describe</strong> the <strong>feelings of hurt and precariöusness</strong> which accompany everyday life for marginalized queers in the modern connected world?
+				<strong>How to explain</strong> that <em>these are <strong>not just numbers</strong> for us</em> (<b class="HIGHLIGHT">40%</b> of trans respondents attempting suïcide at some time in their lives, <b class="HIGHLIGHT">30%</b> experiëncing homelessness, <b class="HIGHLIGHT">47%</b> being victims of sexuäl assault, <b class="HIGHLIGHT">10%</b> in the last year, <b class="HIGHLIGHT">13%</b> while in K–12, <b class="HIGHLIGHT">58%</b> reporting harrassment by police in the past year alone, <b class="HIGHLIGHT">30%</b> facing mistreatment in the workplace, <b class="HIGHLIGHT">15%</b> now facing unemployment, <b class="HIGHLIGHT">29%</b> living in poverty, and all of these numbers increasing dramatically when componded with other forms of marginalization—according to <a rel="external noopener noreferrer" title="USTS Reports | 2015 U.S. Transgender Survey" href="http://www.ustranssurvey.org/reports">the <cite class="MONOGRAPH">2015 U.S. Transgender Survey</cite></a>), but <strong>our lived experiënces</strong>, and those of <strong>our friends</strong>, <strong>our lovers</strong>, <strong>our families</strong>, and <strong>our communities</strong>?
+				<strong>How to argue and debate</strong> over the <strong>fundamental value of a life</strong>, its <strong>right to exist</strong> in a space, its <strong>right to the resources and support</strong> that it needs to survive and to flourish, despite whatever forces might seek to oppress and control?
+			</p>
+			<p>
+				<strong>There are no words, and there never will be.</strong>
+				And so <strong>our goal must be something more</strong> than merely <em>seeking understanding</em> or <em>spreading a message</em>.
+				It must be to <strong>assert value</strong>, <strong>change the landscape</strong>, <strong>press ever forward</strong> into this cybre realm.
+				It must be to <strong>embrace the fraughtness at hand</strong>, <strong>turn it into something meaningful</strong>, <strong>undo the structures which constrain us</strong> and support each other into tomorrow and beyond.
+				<strong><em>This is the cybre mission.</em></strong>
+				Together onward.
+			</p>
+		</section>
+		<aside id="hex">
+			<h3>This week's hex colour</h3>
+			<code class="DARK COLOUR" style="Background-Color: #9900FF">#9900FF</code>
+			<p>
+				At the end of last year, <u class="ORGANIZATION">PANTONE</u> announced <u class="GENERIC">PANTONE 18-3838 Ultra Violet</u> as their <i class="SO-CALLED">Color of the Year</i>.
+				<u class="ORGANIZATION">PANTONE</u> has a long history of <a rel="external noopener noreferrer" title="The Propoganda of Pantone: Colour and Subcultural Sublimation | LOKI" href="https://www.lokidesign.net/journal/2016/2/22/the-propaganda-of-pantone-colour-and-subcultural-sublimation">sublimating subcultural aesthetic</a> as a way of defanging activist design for the mass market.
+				As the <a rel="external noopener noreferrer" title="Pantone Color of the Year 2018 – 18-3838 Ultra Violet | PANTONE" href="https://www.pantone.com/color-of-the-year-2018">official press release</a> states:
+				<q>Musical icons Prince, David Bowie, and Jimi Hendrix brought shades of Ultra Violet to the forefront of western pop culture as personal expressions of individuality. Nuanced and full of emotion, the depth of PANTONE 18-3838 Ultra Violet symbolizes experimentation and non-conformity, spurring individuals to imagine their unique mark on the world, and push boundaries through creative outlets.</q>
+			</p>
+			<p>
+				Taking a colour associated with (in their own words) nonconformity and (let's face it) queerness and using it to market capitalistic mass‐produced product is downright nefarious and as a friend of the colour purple I say let's not let them get away with it.
+				<code class="DARK COLOUR" style="Background-Color: #9900FF">#9900FF</code> is a websafe purple of roughly the same hue as <u class="GENERIC">Ultra Violet</u> but with a little added vim and vigour.
+				It's the kind of colour that has only ever existed on the personal web, and which, even in an age of viral vaporwave marketing, any respectable capitalist organization would think twice before using in any official publication.
+			</p>
+			<p>
+				Let's keep it that way lol.
+				Go wild.
+			</p>
+		</aside>
+		<footer id="backpage">
+			<p id="pubdate">
+				Published <time datetime="2018-11-26">26 November 2018</time>.
+				<a href="https://web.archive.org/web/20180911111010/https://cybremonday.net/CMON0100-r/">First edition</a> published <time datetime="2018-02-05">05 February 2018</time>.
+			</p>
+			<p id="imprint">
+				<strong>Credits:</strong>
+				<a rel="external noopener noreferrer" title="KIBI Gô" href="https://go.KIBI.family/"><u class="PERSON"><u class="FAMILY">Kibi</u> <u class="GIVEN">Gô</u></u></a> [<a rel="external noopener noreferrer" href="https://glitch.social/@kibi"><code class="HANDLE">@kibi@glitch.social</code></a>]:
+				writing,
+				editing,
+				layout,
+				design.
+			</p>
+			<p id="license">
+				<cite class="JOURNAL"><b class="LOGOTYPE">CYBREMONDAY</b></cite> is licensed under a <a rel="external noopener noreferrer" title="Creative Commons Attribution-ShareAlike 4.0 International License" href="https://creativecommons.org/licenses/by-sa/4.0/"><cite class="MONOGRAPH">CC BY-SA 4.0 license</cite></a>.
+			</p>
+			<p id="buttons">
+				<a rel="external noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="(CC) BY-SA" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAYAAABjyArgAAAABGdBTUEAALGPC%2FxhBQAAAAFzUkdCAdnJLH8AAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABh9JREFUaN7tWltPG0cU9nOlIN55KFKRApWoSKu06kuClP4A%2BgPSUvU1alFbVYpEFYpIq6hVkUVF00rgRnkrFwPGgC%2FYBtv4srbXhpBXIvGQviF%2BwYm%2Bs55ldlnbu951WjmMdOT1zOwZ%2B5sz37ns%2Boiox%2Bfz0ZV4L0T4qH8JRzdpO75FkcQOxfdilEgnaC%2BbonQ%2BTQfFLOVLOSqUC6RUilRSFSpVS5qoCilqkYrlAs%2FB3Ew%2Bzfcm0wnWFUlEWDfWCO1s0Pr2Gq2Fg7S6uUIroWWW5Y0lWlr%2Fp2tEAvoC3GgyQrv7cUplkpTO7TNYhXKeAazUylQ9Uqn2rEqHx4d09FwTXNee1XgMcxRV4XtwL3SksknWCd1mkIPhVR1kANylIPuM4GZTbIE5JcfWCtAA6szDGbrzyR261nPt0lFAH8ZmfprhuZXDCm8KLDpTyLA17%2B7vGkDe2Fmnta2gBnJopaUV35%2B8T0NDQ5fWRh%2FG3ILRCf06wKAFGVwAU6oqbJX%2BOT%2F19fXZ5h3M9f%2Fu53tBIbDmrA5yXKeLzUiINrY1kJtZ8dzjORocGtT1j46O0sTEBAuuRT%2FmYK5TEDqpXwcYPAlauAC3xJY49umYAbze3l4aHx%2BnqakpSiaTLLhGH8bkubg3k0tTuaaBDEsGXWicvENbsbCRKiysOPB0kXp6ejR9Y2N0cnJC5oY%2BjGEO5joBodP6dYDh0MCXoAVYrhlcgAcgz87OqFkLBAIGoLHrABkbho3DGnB8sVSUdna3NaqwsGLxA4VlYQPlJnlpw9piTbsAWOk%2FPT2lfC7Hgms3%2BnWAcXzhlMC5ONoyuCMjI5Y726hhE3CPbMnQCU7GGhdUIVnx1hoFN1cNNAHeE5b1%2FPi4JcBowtLscKaV%2FqdPntA7b%2FcbJBqJtKXfAHCaqSHPDg2cK4PbymrtgAxOhuNjqsinKZnRrJi5OKpxsaAJAbBwOE42F3OFY2r15836YbEA9PZHH9OXn39B33%2F7nQ6yf3bWsX4DwGy9apGpQTg0HHVVVandBpAFXUAndCOEE1Yc39OsWI4oZJoQDsfccJzFxpmpA004Jjt%2FXug%2FPz%2BnwPxfDOZvP%2F%2Bi61pcWOC%2BG8PvOdZvABj8WK6VORQTPx6c67YJ3oIghMMJEVycqIdtMk2YAYYnNzeLbMnQcI9dgIV%2BADwwMMBgDg4OGvhYWPG%2FL1860m8AGBmaeqRyLCusV6YGRAvgH%2BweRAbfPDZbP06iCSuGbnAxMr5LNBEJadGExMOvE2C0cDhMw8PD%2FH%2BsAH5x8qJ9gOHccIRFEiEfPSxoFe8CzGAwaDkm3y%2BONHQj4wMVZeshWywV42gCPCzCtf%2BCItDgzODkCvm83re8tKQD7IoiUE84PK7pP1y2QuGs%2Bvv7meQBOK5x%2FMWYiDQAuBizogmk1SUDD8cM4ZoMcDMn18h63Tg5wbeQmR%2BnWd69fp2%2FP57%2Fw52TQ%2ByLuoL44fIxacbJdvhaPgFYAzHxQfGgJcByGGUX4HbDNNEAqjlM%2B%2BrePeZoV2Ha%2FxFgp4mG4Ea3iYZSVJgaIHL83Y5%2BxxQBx4fQDdcAVaYI85hbiuiqVLmZk2vmyOw4ObHzmpOr8lp2nJwMglyMwWZCP%2FTKyUy7xZ5O6r8UpokUGaGV%2BZg3CtMAsug3j6HBouUwrSCFadFk4zCtq8qVItGQ02RzPOtlorFfTzRQuhSJRqOCT1cU3LMF61TZSR3A61S5qwCWiz2Lfy94X%2ByZ87NuFHuwlihZyoV3c7GnqwCGTD6Y1MuVdz%2B7awDZSdEHVm9ZrqwUafrh9Jv4dPniy8Q3X3MYVW2j4I4xzJEL7jc%2FvMnUgDgbG%2FiGPr43dvzwYJKTAYAsW3I7j4wAbrlaovk%2F592%2BX2CZZJjndGINt3p9Vp0Msqo99AQnO37oOSceeiquwTWDZ3XtBbh21%2FQEYEEX8mN7gNbqsT2eXPBje7wfUSl6RgutypVertGozuE5wJD3P7hBwY0gh3CIk1X9xZOa9OJJjfvkF0%2FWQkG6dfuWl68gdYwaGq3VcQuWBWA9%2BvURxVNx6dWpuuDVqUqRxzDHS2BflwW34viOA3wlLoSI3roConNvV74C8NfodpNElTgAAAAASUVORK5CYII%3D" height="31" width="88" /></a>
+				<a rel="external noopener noreferrer" title="Validate my HTML document" href="http://validator.w3.org/nu/?doc=https://www.cybremonday.deals/2018/"><img alt="Valid XHTML 1.1!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAllBMVEUAAAAAAAALCwsbGxsrKys7OztLS0tbW1tra2t7e3uLi4ubm5urq6u7u7vLy8vb29vr6%2Bv7%2B%2Fv%2F%2F%2F8TFhgjKS0xOD02PkRJVFxMWGBgbnhpeYV9kJ2QprWbs8OnwdKyzeAAWpwebagxea9Vkb18qsybvtjT4%2B7i7PNEXW8fW4drg5cybZl2kac5dKGJs9FEhrarq62Ql6AHg7VaAAAAMnRSTlMA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5BaZwMAAAJRSURBVEiJ7ZZtk6IwDMc36OLDKosFRaW2RZ7ukZv7%2Fl%2FukrSw6OG4Osy9urxI02H8NfxJUl%2BC8e2FLRD3rdafN7mc%2FQc%2FBz5JxU7ZVafWcMW9SqXW6ekpcAqJlhDrIxy0jkFFQBYpgL3WOwCt8OE1uMwK%2FHXBXtTGZGS5EOFiHojVxkqxgzQG2YFlmkCSSgSDOsENcG0yJJbmLHixhqf4AF4wDSyYckTmEXbHYwT4%2FgfaKtjCYQ%2FxMFicTYU%2BMzX63OR1XdJRbzBdvHpe6D5eAoQ7sgQ98C6J4HALXFB%2BiC9bfEah%2F4oqzBauKiREKHMnxQdY4jG3wKwCiou6VhQWrIpHjzahA6PAKPMAWO8PmsERVQmBjemqwmCaKG5mk8cjUJpw0q8KwqgoGgLzqVo5ieTyq2Eyg3N89dyQFmeOUGcR%2Bn2woipFp05Ux3aDkWbHT09kmPF3%2FvYOXKIKJitNwQWSZ4a0eHuq8366qrLgmqjIPpNHq%2BjrrZ8B%2F2q5rvPOTgdbGVx0l533MNeBC9xYXwurTXYJljFg35F9RD1e8xfXgSuutdrY7mNwaKONbRCZbFtwF%2FXzbK657RDilkAtClHmVoq1Jc%2FXXee1uOQKzLym4365mG45a1BgAedYGyWdM3snrhfcAzte49Zvl2OztBMo4%2BQNSxJ4%2FmwCS%2FG5jFv7cT2Pi85XOQ9NJPuT6UpcgJPtALhPbh4d9JI7lnrXRcPk5uEbRNmbSKZtNEhuxr9M28oY%2F5Zua3n867%2Bx3fcP%2FldsVvft9wM2b8H%2B2LZl7h%2Bh5PPvxrhAcgAAAABJRU5ErkJggg%3D%3D" height="31" width="88" /></a>
+			</p>
+		</footer>
+	</article>
+</body>
+</html>

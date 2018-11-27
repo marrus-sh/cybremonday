@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>[CPLA2018] Enter the CYBRE | CYBREMONDAY</title>
+	<meta name="author" content="CYBREMONDAY staff" />
+	<meta name="referrer" content="strict-origin-when-cross-origin" />
+	<meta name="audience" content="all" />
+	<meta name="publisher" content="CYBREMONDAY staff" />
+	<meta property="og:title" content="The CYBRE Manifesto" />
+	<meta property="og:locale" content="en" />
+	<meta property="og:url" content="https://www.cybremonday.deals/2018/Plalist/" />
+	<meta property="og:image" content="https://www.cybremonday.deals/2018/cover.png" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:type" content="article" />
+	<meta property="article:published_time" content="2018-11-26T18:30:00-08:00" />
+	<link rel="canonical" href="https://www.cybremonday.deals/2018/Playlist/" />
+	<link rel="icon" href="https://www.cybremonday.deals/icon.png" />
+	<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" />
+	<style>
+		#player {
+			Display: Block;
+			Box-Sizing: Border-Box;
+			Margin: 0;
+			Border: Thick #90F Groove;
+			Width: 100%;
+		}
+		#playlist { Display: Block }
+		#credits {
+			Display: Block;
+			Border-Top: Thin #000 Solid;
+			Padding-Bottom: 4EX;
+			Color: #FFF;
+			Background: #000;
+			Font: Normal Small / 1.875 Serif;
+			Text-Align: Center;
+		}
+
+		body, html {
+			Margin: 0;
+			Padding: 0;
+			Color: #FFF;
+			Background: #90F;
+			Font: Normal Medium / 1.5 Serif;
+		}
+
+		ol {
+			Margin: 0;
+			Padding: 0;
+			List-Style-Type: None;
+		}
+
+		a[href] {
+			Color: Inherit;
+			Text-Decoration: Dashed Underline;
+		}
+		a[href]:Hover { Text-Decoration: None }
+		#playlist>a[href] {
+			Display: Block;
+			Border-Style: None None Solid;
+			Border-Width: 0 0 Thin;
+			Padding: 1.5EX 3CH;
+			Color: #FFF;
+			Background: Linear-Gradient(To Right, #000 69%, #90F) 0 0 / 110% 100% No-Repeat, #90F;
+			Text-Decoration: None;
+			Transition: Background-Position .3S;
+		}
+		#playlist>a[href]:Hover { Background-Position: 100% 0 }
+		#playlist>a[href].PLAYING::BEFORE { Content: "▶ " }
+		#playlist>a[href].PAUSED::BEFORE { Content: "… " }
+		cite.ALBUM { }
+		#playlist cite.LICENSE {
+			Display: Inline-Block;
+			Font-Family: Monospace;
+			Font-Style: Normal;
+			Vertical-Align: .25EX;
+		}
+		#credits cite.TRACK { Font-Style: Inherit }
+		#credits cite.TRACK::BEFORE { Content: Open-Quote }
+		#credits cite.TRACK::AFTER { Content: Close-Quote }
+		time { Font-Weight: Bold }
+		u { Text-Decoration: None }
+		u.ARTIST { Font-Weight: Bold }
+		u.GIVEN, u.PERSON { Font-Variant: Small-Caps }
+		u.FAMILY {
+			Font-Variant: Normal;
+			Text-Transform: Uppercase;
+		}
+	</style>
+</head>
+<body>
+	<nav id="playlist">
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/BSMX0157/03-HelloWorld.mp3">
+			<span class="TRACKNO">01</span>
+			<cite class="TRACK">Hello World</cite>
+			|
+			<u class="ARTIST">BIT</u>
+			<cite class="LICENSE">[cc by-nc-sa 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/Home-Odyssey/Home-Odyssey-10ComeBackDown.mp3">
+			<span class="TRACKNO">02</span>
+			<cite class="TRACK">Come Back Down</cite>
+			|
+			<u class="ARTIST">HOME</u>
+			<cite class="LICENSE">[cc by-nc-nd 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://web.archive.org/web/20181127000810if_/https://kahvi.micksam7.com/mp3/kahvi370a_curious_inversions-sunset.mp3">
+			<span class="TRACKNO">03</span>
+			<cite class="TRACK">Sunset</cite>
+			|
+			<u class="ARTIST">Curious Inversions</u>
+			<cite class="LICENSE">[cc by-nc-nd 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://web.archive.org/web/20180204033350if_/http://anal0g.jared.cloud/wires/mp3/04-_aa_-black_friday.mp3">
+			<span class="TRACKNO">04</span>
+			<cite class="TRACK">black_friday</cite>
+			|
+			<u class="ARTIST">_aa_</u>
+			<cite class="LICENSE">[cc by-nc-sa 2.5]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/BSCOMP0051/08-Fennec-Omerta.mp3">
+			<span class="TRACKNO">05</span>
+			<cite class="TRACK">Omerta</cite>
+			|
+			<u class="ARTIST">Fennec</u>
+			<cite class="LICENSE">[cc by-nc-nd 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/headphonica.hpcd096/the_plastic_jazz_orchestra__39__01.mp3">
+			<span class="TRACKNO">06</span>
+			<cite class="TRACK">33 cent</cite>
+			|
+			<u class="ARTIST">Plastic Jazz Orchestra</u>
+			<cite class="LICENSE">[cc by-nc-sa 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/jamendo-101136/10.mp3">
+			<span class="TRACKNO">07</span>
+			<cite class="TRACK">Raiders of the Lost Art</cite>
+			|
+			<u class="ARTIST">Screenatorium</u>
+			<cite class="LICENSE">[cc by-sa 3.0]</cite>
+		</a>
+		<a rel="external noopener noreferrer" target="_blank" href="https://archive.org/download/jamendo-022206/05.mp3">
+			<span class="TRACKNO">08</span>
+			<cite class="TRACK">Mind Race</cite>
+			|
+			<u class="ARTIST">Ancient Free Gardeners</u>
+			<cite class="LICENSE">[cc by-nc-sa 2.5 au]</cite>
+		</a>
+	</nav>
+	<footer id="credits">
+		<h3>Credits</h3>
+		<ol>
+			<li>
+				<a href="http://www.kirkmakesthings.com/bit/" rel="external noopener noreferrer"><u class="ARTIST">BIT</u></a>.
+				<cite class="TRACK">Hello World</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/BSMX0157" rel="external noopener noreferrer">lenna was a test image</a></cite>.
+				<a href="http://www.kirkmakesthings.com/" rel="external noopener noreferrer"><u class="PERSON"><u class="GIVEN">Kirk</u> <u class="FAMILY">Pearson</u></u></a>,
+				<time datetime="2017-04-11">11 April 2017</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external noopener noreferrer">CC BY-NC-SA 3.0</a></cite>.
+			</li>
+			<li>
+				<a href="https://home96.bandcamp.com/" rel="external noopener noreferrer"><u class="ARTIST">HOME</u></a>.
+				<cite class="TRACK">Come Back Down</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/Home-Odyssey" rel="external noopener noreferrer">Odyssey</a></cite>.
+				<a href="https://midwestcollective.bandcamp.com/" rel="external noopener noreferrer"><u class="ORGANIZATION">Midwest Collective</u></a>,
+				<time datetime="2014-07-01">01 July 2014</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" rel="external noopener noreferrer">CC BY-NC-ND 3.0</a></cite>.
+			</li>
+			<li>
+				<a href="http://curiousinversions.blogspot.com/" rel="external noopener noreferrer"><u class="ARTIST">Curious Inversions</u></a>.
+				<cite class="TRACK">Sunset</cite>.
+				In <cite class="ALBUM"><a href="http://www.kahvi.org/releases.php?release_number=370" rel="external noopener noreferrer">Stone on Stone</a></cite>.
+				<a href="http://www.kahvi.org/" rel="external noopener noreferrer"><u class="ORGANIZATION">Kahvi Collective</u></a>,
+				<time datetime="2016-05-18">18 May 2016</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" rel="external noopener noreferrer">CC BY-NC-ND 3.0</a></cite>.
+			</li>
+			<li>
+				<a href="http://anal0g.org/_aa_/" rel="external noopener noreferrer"><u class="ARTIST">_aa_</u></a>.
+				<cite class="TRACK">black_friday</cite>.
+				In <cite class="ALBUM"><a href="http://anal0g.org/wires/" rel="external noopener noreferrer">wires</a></cite>.
+				<a href="http://anal0g.org/" rel="external noopener noreferrer"><u class="ORGANIZATION">anal0g.org</u></a>,
+				<time datetime="2005-11-27">27 November 2005</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-sa/2.5/" rel="external noopener noreferrer">CC BY-NC-SA 2.5</a></cite>.
+			</li><li>
+				<a href="http://fennecfennec.com/" rel="external noopener noreferrer"><u class="ARTIST">Fennec</u></a>.
+				<cite class="TRACK">Omerta</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/BSCOMP0051" rel="external noopener noreferrer">netBloc Vol. 51: Embark!</a></cite>.
+				<a href="https://blocsonic.com/" rel="external noopener noreferrer"><u class="ORGANIZATION">blocSonic</u></a>,
+				<time datetime="2016-04-29">29 April 2016</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" rel="external noopener noreferrer">CC BY-NC-ND 3.0</a></cite>.
+			</li><li>
+				<a href="https://theplasticjazzorchestra.bandcamp.com/" rel="external noopener noreferrer"><u class="ARTIST">Plastic Jazz Orchestra</u></a>.
+				<cite class="TRACK">33 cent</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/headphonica.hpcd096" rel="external noopener noreferrer">39°</a></cite>.
+				<a href="http://headphonica.com/" rel="external noopener noreferrer"><u class="ORGANIZATION">headphonica</u></a>,
+				<time datetime="2012-03-12">12 March 2012</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external noopener noreferrer">CC BY-NC-SA 3.0</a></cite>.
+			</li>
+			<li>
+				<a href="http://www.screenatorium.com/" rel="external noopener noreferrer"><u class="ARTIST">Screenatorium</u></a>.
+				<cite class="TRACK">Raiders of the Lost Art</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/jamendo-101136" rel="external noopener noreferrer">Flyentists</a></cite>.
+				<a href="https://www.jamendo.com/" rel="external noopener noreferrer"><u class="ORGANIZATION">Jamendo</u></a>,
+				<time datetime="2011-10-30">30 October 2011</time>.
+				<cite class="LICENSE"><a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="external noopener noreferrer">CC BY-SA 3.0</a></cite>.
+			</li>
+			<li>
+				<a href="https://web.archive.org/web/20120929004852/http://www.ancientfreegardeners.com:80/" rel="external noopener noreferrer"><u class="ARTIST">Ancient Free Gardeners</u></a>.
+				<cite class="TRACK">Mind Race</cite>.
+				In <cite class="ALBUM"><a href="https://archive.org/details/jamendo-022206" rel="external noopener noreferrer">Ancient Free Gardeners</a></cite>.
+				<a href="https://www.jamendo.com/" rel="external noopener noreferrer"><u class="ORGANIZATION">Jamendo</u></a>,
+				<time datetime="2008-04-03">03 April 2008</time>.
+				<cite class="LICENSE"><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/au/" rel="external noopener noreferrer">CC BY-NC-SA 2.5 AU</a></cite>.
+			</li>
+		</ol>
+	</footer>
+	<script>
+		(function() {
+			document.addEventListener("DOMContentLoaded", (function() {
+				var audio, currentId, i, len, play, playnext, ref, replay, track, trackno, tracks, updateplay;
+				audio = new Audio;
+				tracks = Array.prototype.slice.call(((ref = this.getElementById("playlist")) != null ? ref.children : void 0) || []);
+				currentId = -1;
+				replay = function() {
+					var seekto, time;
+					time = this.currentTime;
+					seekto = function() {
+						this.removeEventListener("play", seekto, false);
+						if (time > this.currentTime) {
+							this.currentTime = time;
+						}
+						if (this.currentTime >= time) {
+							return this.removeEventListener("playing", seekto, false);
+						}
+					};
+					this.load();
+					this.play();
+					this.addEventListener("play", seekto, false);
+					return this.addEventListener("playing", seekto, false);
+				};
+				play = function(id, cueonly) {
+					var currentTrack, track;
+					if (id == null) {
+						id = currentId + 1;
+					}
+					if (!(((track = tracks[id]) != null) || ((track = tracks[id = 0]) != null))) {
+						return;
+					}
+					if (id === currentId) {
+						if (this.paused) {
+							this.play();
+						} else {
+							this.pause();
+						}
+						return;
+					}
+					this.src = track.href;
+					if (!cueonly) {
+						this.play();
+					}
+					track.setAttribute("class", cueonly ? "PAUSED" : "PLAYING");
+					if ((currentTrack = tracks[currentId]) != null) {
+						currentTrack.removeAttribute("class");
+					}
+					return currentId = id;
+				};
+				updateplay = function() {
+					var currentTrack;
+					if ((currentTrack = tracks[currentId]) == null) {
+						return;
+					}
+					return currentTrack.setAttribute("class", this.paused ? "PAUSED" : "PLAYING");
+				};
+				playnext = play.bind(audio, null, false);
+				audio.id = "player";
+				audio.controls = true;
+				audio.preload = "none";
+				audio.addEventListener("play", updateplay, false);
+				audio.addEventListener("pause", updateplay, false);
+				audio.addEventListener("stalled", replay, false);
+				audio.addEventListener("error", playnext, false);
+				audio.addEventListener("ended", playnext, false);
+				for (trackno = i = 0, len = tracks.length; len > i; trackno = ++i) {
+					track = tracks[trackno];
+					track.addEventListener("click", play.bind(audio, trackno, false), false);
+					track.addEventListener("click", (function(e) {
+						return e.preventDefault();
+					}), false);
+				}
+				this.body.insertBefore(audio, this.body.firstChild);
+				return play.call(audio, 0, true);
+			}), false);
+		}).call(this);
+	</script>
+</body>
+</html>
